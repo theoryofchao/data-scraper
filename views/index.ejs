@@ -3,9 +3,23 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src='/javascripts/scrape.js'></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Simple Data Scraper</h1>
+    <p>Built by Roger Chao</p>
+    <form id="scrape-form">
+      <label for="url">URL: </label>
+      <input class="url" type="text" name"url">
+      <label for="data">Selector: </label>
+      <input class="data" type="text" name"data">
+      <input type="submit" value="Submit">
+    </form>
+    
+    <br>
+    <br>
+    <div class="data-to-display">
+    </div>
   </body>
 </html>
